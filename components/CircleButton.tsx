@@ -1,11 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-
-export default function Details() {
+const CircleButton = () => {
   return (
     <View>
-      <Text>Details</Text>
+      <Text>CircleButton</Text>
     </View>
   )
 }
+
+export default CircleButton
