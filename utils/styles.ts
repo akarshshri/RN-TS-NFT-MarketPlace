@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { COLORS, SHADOWS, SIZES } from "../constants";
+import { COLORS, FONTS, SHADOWS, SIZES } from "../constants";
 
 export const homeScreen = StyleSheet.create({
     background: {
@@ -28,7 +28,97 @@ export const nftCard = StyleSheet.create({
     image: {
       width: '100%',
       height: '100%',
-      borderTopLeftRadius: SIZES.font,
-      borderTopRightRadius: SIZES.font,
+      borderRadius: SIZES.font
+      // borderTopLeftRadius: SIZES.font,
+      // borderTopRightRadius: SIZES.font,
+    },
+    nftTitleView: {
+      width: '100%',
+      padding: SIZES.font,
+      flexDirection: 'row',
+      justifyContent: 'space-between'
     }
 });
+
+export const circularButtonStyle = StyleSheet.create({
+  button: {
+    width: 40,
+    height: 40,
+    backgroundColor: COLORS.white,
+    position: 'absolute',
+    borderRadius: SIZES.extraLarge,
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: 10,
+    right: 10,
+    ...SHADOWS.light,
+  },
+  image: {
+    height: 24,
+    width: 24,
+  }
+})
+
+export const rectButtonStyle = StyleSheet.create({
+  button: {
+    width: 40,
+    height: 40,
+    backgroundColor: COLORS.white,
+    position: 'absolute',
+    borderRadius: SIZES.extraLarge,
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: 10,
+    right: 10,
+    ...SHADOWS.light,
+  }
+})
+
+export const subInfoStyle = StyleSheet.create({
+  background : {
+    width: '100%',
+    paddingHorizontal: SIZES.font,
+    marginTop: -SIZES.extraLarge,
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  ImageCmp: {
+    width: 48,
+    height: 48,
+  },
+  people: {
+    flexDirection: 'row'
+  },
+  endDateBtn: {
+    paddingHorizontal: SIZES.font,
+    paddingVertical: SIZES.base,
+    backgroundColor: COLORS.white,
+    justifyContent: 'center',
+    alignItems: 'center',
+    ...SHADOWS.light,
+    elevation: 1,
+    maxWidth: '50%',
+    borderRadius: 4,
+    marginBottom: 4
+  },
+  endDateText: {
+    fontFamily: FONTS.regular,
+    fontSize: SIZES.small,
+    color: COLORS.primary
+  },
+  endDateTime: {
+    fontFamily: FONTS.semiBold,
+    fontSize: SIZES.medium,
+    color: COLORS.primary
+  },
+  nftTitle: {
+    fontFamily: FONTS.semiBold,
+    fontSize: SIZES.large,
+    color: COLORS.primary
+  },
+  nftSubtitle: {
+    fontFamily: FONTS.regular,
+    fontSize: SIZES.small,
+    color: COLORS.primary
+  }
+})

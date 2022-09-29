@@ -19,3 +19,21 @@ export interface nftCardProps {
 export interface focusedStatusBarProps{
   background: string
 }
+
+export interface circularButtonProps {
+  imgUrl: ImageBitmap,
+  handlePress: ()=> void
+}
+export interface rectButtonProps {
+  handlePress: ()=> void
+}
+
+export interface nftTitleProps {
+  title: string,
+  subtitle: string,
+}
+
+export interface imgUrlProps {
+  imgUrl: ImageProps,
+  index: number
+}

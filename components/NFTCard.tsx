@@ -4,8 +4,9 @@ import { useNavigation } from '@react-navigation/native'
 
 import { COLORS, SIZES, SHADOWS, assets  } from '../constants'
 import { nftCard } from '../utils/styles'
-import { nftCardProps } from '../utils/interface'
-import CircleButton from './CircleButton'
+import { nftCardProps } from '../utils/types'
+import { CircularButton, RectButton } from './Button'
+import { SubInfo, EthPrice, NFTtitle } from './SubInfo'
 
 const NFTCard = ({ data }: nftCardProps) => {
   const navigation = useNavigation();
@@ -18,9 +19,19 @@ const NFTCard = ({ data }: nftCardProps) => {
         resizeMode="cover"
         style={nftCard.image}
         />
-        <CircleButton />
+        <CircularButton imgUrl={assets.heart} handlePress= {()=>{}} />
       </View>
-      <Text>NFTCard</Text>
+      <SubInfo />
+      <View >
+          <NFTtitle 
+            title={data.name}
+            subtitle={data.creator}
+          />
+          <View style={nftCard.nftTitleView}>
+            <EthPrice />
+            <RectButton  handlePress= {()=>{}}  />
+          </View>
+      </View>
     </View>
   )
 }
