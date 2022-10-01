@@ -61,14 +61,13 @@ export const circularButtonStyle = StyleSheet.create({
 
 export const rectButtonStyle = StyleSheet.create({
   button: {
-    width: 40,
+    paddingHorizontal: 15,
     height: 40,
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.gray,
     position: 'absolute',
     borderRadius: SIZES.extraLarge,
     alignItems: 'center',
     justifyContent: 'center',
-    top: 10,
     right: 10,
     ...SHADOWS.light,
   }
@@ -120,5 +119,19 @@ export const subInfoStyle = StyleSheet.create({
     fontFamily: FONTS.regular,
     fontSize: SIZES.small,
     color: COLORS.primary
+  },
+  ethPriceContainer: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  ethPriceImage: {
+    height: 20,
+    width: 20,
+    marginRight: 2
+  },
+  ethPriceText: {
+    fontFamily: FONTS.medium,
+    fontSize: SIZES.font,
+    color: COLORS.primary,
   }
 })
