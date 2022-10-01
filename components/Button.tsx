@@ -19,7 +19,8 @@ export function CircularButton({ imgUrl, handlePress }: circularButtonProps) {
 export function RectButton({ handlePress }: rectButtonProps) {
   return (
     <TouchableOpacity style={rectButtonStyle.button} >
-    <Button title='Place a Bid' onPress={handlePress} color={COLORS.white} />
+      {/* <Button title='Place a Bid' onPress={handlePress} color={COLORS.gray} /> */}
+      <Text onPress={handlePress} style={{color: COLORS.white}} >Place a bid</Text>
     </TouchableOpacity>
   )
 }
