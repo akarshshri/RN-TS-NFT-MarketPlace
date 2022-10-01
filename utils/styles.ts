@@ -73,6 +73,13 @@ export const rectButtonStyle = StyleSheet.create({
   }
 })
 
+export const homeHeaderStyle = StyleSheet.create({
+  container: {
+    padding: SIZES.font,
+    backgroundColor: COLORS.primary,
+  }
+})
+
 export const subInfoStyle = StyleSheet.create({
   background : {
     width: '100%',

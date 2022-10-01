@@ -37,3 +37,7 @@ export interface imgUrlProps {
   imgUrl: ImageProps,
   index: number
 }
+
+export interface homeHeaderProps {
+  onSearch: () => void
+}
