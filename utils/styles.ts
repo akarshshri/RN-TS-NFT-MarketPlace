@@ -64,11 +64,11 @@ export const rectButtonStyle = StyleSheet.create({
     paddingHorizontal: 15,
     height: 40,
     backgroundColor: COLORS.gray,
-    position: 'absolute',
+    // position: 'absolute',
     borderRadius: SIZES.extraLarge,
     alignItems: 'center',
     justifyContent: 'center',
-    right: 10,
+    // right: 10,
     ...SHADOWS.light,
   }
 })
