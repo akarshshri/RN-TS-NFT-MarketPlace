@@ -29,7 +29,10 @@ const NFTCard = ({ data }: nftCardProps) => {
           />
           <View style={nftCard.nftTitleView}>
             <EthPrice />
-            <RectButton  handlePress= {()=>{}}  />
+            {//@ts-ignore
+            <RectButton  handlePress= {()=>{navigation.navigate("Details", { data } );
+            }}  />
+            }
           </View>
       </View>
     </View>

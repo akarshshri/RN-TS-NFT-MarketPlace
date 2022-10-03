@@ -24,8 +24,13 @@ export function NFTtitle({title, subtitle}:nftTitleProps) {
 
 export function EthPrice() {
   return (
-    <View>
-      <Text>EthPrice</Text>
+    <View style={subInfoStyle.ethPriceContainer} >
+      <Image
+      source={assets.eth}
+      resizeMode="contain"
+      style={subInfoStyle.ethPriceImage}
+      />
+      <Text style={subInfoStyle.ethPriceText} >0.006</Text>
     </View>
   )
 }
@@ -47,6 +52,7 @@ export function People() {
         return <ImageCmp
         imgUrl={imgUrl}
         index={index}
+        key={index}
          />
       })}
     </View>

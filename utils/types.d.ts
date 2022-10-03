@@ -17,7 +17,9 @@ export interface nftCardProps {
   }
   
 export interface focusedStatusBarProps{
-  background: string
+  backgroundColor: string,
+  translucent?: boolean,
+  barStyle?: StatusBarStyle
 }
 
 export interface circularButtonProps {
@@ -36,4 +38,8 @@ export interface nftTitleProps {
 export interface imgUrlProps {
   imgUrl: ImageProps,
   index: number
+}
+
+export interface homeHeaderProps {
+  onSearch: () => void
 }

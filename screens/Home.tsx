@@ -18,7 +18,7 @@ export default function Home() {
               }}
               keyExtractor={(item)=>{return item.id}}
               showsHorizontalScrollIndicator={false}
-              ListHeaderComponent={<HomeHeader/>}
+              ListHeaderComponent={<HomeHeader onSearch={()=>{}} />}
             />
           </View>
           <View style={homeScreen.background}>
